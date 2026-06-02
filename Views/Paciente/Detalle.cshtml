@@ -1,0 +1,17 @@
+﻿@model CitasAPP.Models.Paciente
+
+<h2>Detalle del Paciente</h2>
+
+<ul>
+    <li><strong>ID:</strong> @Model.Id</li>
+    <li><strong>Nombre:</strong> @Model.Nombre @Model.Apellido</li>
+    <li><strong>Email:</strong> @Model.Email</li>
+    <li><strong>Teléfono:</strong> @Model.Telefono</li>
+</ul>
+
+<a asp-controller="Cita" asp-action="PorPaciente" asp-route-pacienteId="@Model.Id" class="btn btn-primary">
+    Ver Citas de este Paciente
+</a>
+<br />
+<br />
+<a asp-action="Index">Volver a la lista</a>

@@ -1,0 +1,12 @@
+﻿@model CitasAPP.Models.Medico
+
+<h2>Detalle del Médico</h2>
+
+<ul>
+    <li><strong>ID:</strong> @Model.Id</li>
+    <li><strong>Nombre:</strong> @Model.Nombre @Model.Apellido</li>
+    <li><strong>Especialidad:</strong> @Model.Especialidad</li>
+    <li><strong>Número de Licencia:</strong> @Model.NumeroLicencia</li>
+</ul>
+
+<a asp-action="Index">Volver a la lista</a>
